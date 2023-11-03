@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="main-container">
+
+    <header class="desktop-header">
+      <div class="first-section">
+        <div class="logo">
+          <img src="images/logo.svg" alt="">
+        </div>
+        <nav>
+          <ul>
+            <li>Collections</li>
+            <li>Men</li>
+            <li>Women</li>
+            <li>About</li>
+            <li>Contact</li>
+          </ul>
+        </nav>
+      </div>
+     
+      <div class="cart-section">
+        <div class="cart" style="display: flex; align-items: center;">
+          <img src="images/icon-cart.svg" style="margin-right: 20px;" id="cart-icon">
+          <p class="item" id="item">0</p>
+        </div>
+        <img src="images/image-avatar.png" width="40" class="img-avatar">
+        <div class="cart-dropdown" id="cart-dropdown">
+          <div class="head4">
+            <h4>Cart</h4>
+          </div>
+          <div class="lower-sec" id="lower-sec">
+            <div class="itemShower" id="goods">
+              <img src="images/image-product-1-thumbnail.jpg" height="100%" style="border-radius: 10px;">
+              <div class="text-part">
+                <p style="font-size: 13px; color: hsl(0, 0%, 56%); margin-bottom: 5px;">Fall Limited Edition Sneakers</p>
+                <p id="calcSec" style="font-size: 13px; color: hsl(0, 0%, 56%); margin-top: 6px; display: inline;"></p>
+                <p id="result" style="color: black;  font-size: 13px; font-weight: 700; display: inline;"></p>
+              </div>
+              <img src="images/icon-delete.svg" alt="">
+            </div>           
+          </div>
+          <button class="button">
+            Checkout
+          </button>
+          
+          
+        </div>
+      </div>
+      
+    </header>
+
+    <header class="mobile-header">
+      <div class="first-section">
+        <div class="logo">
+          <button id="openNav" class="navbar">
+            <img src="images/icon-menu.svg" style="margin-right: 10px;">
+          </button>
+          <nav id="sideNav">
+            <button id="closeNav">&times;</button>
+            <ul>
+              <li><a href="#">Collections</a></li>
+              <li><a href="#">Men</a></li>
+              <li><a href="#">Women</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+          
+          <img src="images/logo.svg" alt="">
+        </div>
+      </div>
+      
+      <div class="cart-section">
+        <img src="images/icon-cart.svg" style="margin-right: 40px;">
+        <img src="images/image-avatar.png" width="40">
+      </div>
+    </header>
+    
+
+    <main>
+
+      <div class="first-section">
+
+        <div class="main-image-sec">
+          <img src="images/image-product-1.jpg" id="main-image" class="">
+        </div>
+
+        <div class="small-image-sec">
+          <img src="images/image-product-1-thumbnail.jpg" id="mini-img-1">
+          <img src="images/image-product-2-thumbnail.jpg" id="mini-img-2">
+          <img src="images/image-product-3-thumbnail.jpg" id="mini-img-3">
+          <img src="images/image-product-4-thumbnail.jpg" id="mini-img-4">
+        </div>
+      </div>
+
+      <div class="mobile-main">
+        <div class="wrap">
+          <div id="arrow-left" class="arrow">
+            <img src="images/icon-previous.svg" alt="">
+          </div>
+  
+          <div id="slider">
+              <div class="slide slide1">
+                  <div class="slide-content">
+                  </div>
+              </div>
+              <div class="slide slide2">
+                  <div class="slide-content">
+                  </div>
+              </div>
+              <div class="slide slide3">
+                  <div class="slide-content">
+                  </div>
+              </div>
+
+              <div class="slide slide4">
+                <div class="slide-content">
+                </div>
+            </div>
+          </div>
+  
+          <div id="arrow-right" class="arrow">
+              <img src="images/icon-next.svg" alt="">
+          </div>
+      </div>
+  
+      </div>
+
+      <div class="second-section">
+
+        <h3>SNEAKER COMPANY</h3>
+        <h1>Fall Limited Edition Sneakers</h1>
+        <p class="desc">These low-profile sneakers are your perfect casual wear companion. Featuring a 
+          durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+          <p class="price-tag-1">$125.00 <span>50%</span></p>
+          <p class="price-tag-2">$250.00</p>
+
+          <div class="quan">
+            <div class="q-cont">
+              <img src="images/icon-minus.svg" style="cursor: pointer;" id="decrement">
+              <p id="quan-num">0</p>
+              <img src="images/icon-plus.svg" style="cursor: pointer;" id="increment">
+            </div>
+            <button id="addToCart">
+              <img src="images/icon-cart2.svg" style="width: 18px; padding-right: 10px;">
+              Add to Cart
+            </button>
+          </div>
+
+          
+      </div>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

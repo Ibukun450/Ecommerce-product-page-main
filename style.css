@@ -1,0 +1,490 @@
+body {
+    margin: 0 100px 0 100px;
+    font-family: 'Kumbh Sans', sans-serif;
+    transition: all .3s;
+}
+
+.desktop-header {
+    display: grid;
+    grid-template-columns: 1fr 100px;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid hsl(233, 100%, 97%);
+    height: 100px;
+}
+
+.desktop-header .first-section {
+    display: flex;
+    align-items: center;
+}
+
+.desktop-header ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.desktop-header ul li {
+    margin-left: 30px;
+    color: hsl(220, 14%, 75%);
+    height: 82px;
+    display: flex;
+    align-items: center;
+    transition: all .3s;
+    font-size: 14px;
+}
+
+.desktop-header ul li:hover {
+    border-bottom: 3px solid hsl(26, 100%, 55%);
+    cursor: pointer;
+    color: hsl(219, 9%, 45%);
+}
+
+.desktop-header .cart-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.desktop-header .item {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background-color: hsl(26, 100%, 55%);
+    padding: 1px 5px;
+    width: 10px;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 11px;
+    text-align: center;
+    position: relative;
+    bottom: 10px;
+    right: 33px;
+}
+
+.desktop-header .cart-section .img-avatar:hover {
+    border: 3px solid hsl(26, 100%, 55%); border-radius: 50px;
+}
+
+.mobile-header {
+    display: none;
+    grid-template-columns: 1fr 100px;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid hsl(233, 100%, 97%);
+    height: 100px;
+}
+
+.mobile-header .first-section {
+    display: flex;
+    align-items: center;
+}
+
+.mobile-header ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.mobile-header ul li {
+    margin-left: 30px;
+    color: hsl(220, 14%, 75%);
+    height: 82px;
+    display: flex;
+    align-items: center;
+    transition: all .3s;
+}
+
+.mobile-header ul li:hover {
+    border-bottom: 3px solid hsl(26, 100%, 55%);
+    cursor: pointer;
+    color: hsl(219, 9%, 45%);
+}
+
+.mobile-header .cart-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    padding: 100px 0 90px 0;
+}
+
+main .first-section {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+main .small-image-sec {
+    padding-top: 10px;
+}
+
+main .small-image-sec img {
+    width: 7.5vw;
+    border-radius: 20px;
+    margin: 14px;
+}
+
+main .main-image-sec img {
+    width: 37vw;
+    border-radius: 20px;
+}
+
+main .small-image-sec img:hover {
+    cursor: pointer;
+    opacity: .5;
+}
+
+main .second-section {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 150px;
+    margin-left: 50px;
+}
+
+main .second-section h3 {
+    color: hsl(26, 100%, 55%);
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+    padding-bottom: 13px;
+    font-weight: 700;
+}
+
+main .second-section h1 {
+    padding: 0;
+    margin: 0;
+    font-size: 40px;color: hsl(220, 13%, 13%);
+    padding-bottom: 10px;
+    font-weight: 700;
+}
+
+main .second-section .desc {
+    color: hsl(222, 7%, 64%);
+    width: 400px;
+    line-height: 25px;
+}
+
+.price-tag-1 {
+    font-size: 30px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.price-tag-1 span {
+    margin-left: 10px;
+    color: hsl(26, 100%, 55%);
+    font-size: 16px;
+    padding: 5px 8px;
+    border-radius: 2px;
+    background-color:  hsl(25, 100%, 94%);
+}
+
+.price-tag-2 {
+    padding: 0;
+    margin: 0;
+    color: hsl(222, 15%, 83%);
+    font-weight: 700;
+    text-decoration: line-through;
+    padding-top: 10px;
+}
+
+.quan {
+    display: flex;
+    margin-top: 30px;
+}
+
+.q-cont {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    background-color: hsl(223, 64%, 98%);
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.q-cont p {
+    font-weight: 700;
+}
+
+.quan button {
+    width: 100%;
+    color: white;
+    background-color: hsl(26, 100%, 55%);
+    border-radius: 10px;
+    padding: 15px 40px;
+    border: none;
+    font-weight: 700;
+    transition: all .3s;
+}
+
+.quan button:hover {
+    background-color: hsl(25, 100%, 84%);
+    cursor: pointer;
+}
+
+
+.selected {
+    opacity: .3;
+    border: 3px solid hsl(26, 100%, 55%);
+}
+
+
+.mobile-main, #slider, .wrap, .slide-content {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.wrap {position: relative}
+
+.slide {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.slide1{background-image: url('images/image-product-1.jpg')}
+
+.slide2{background-image: url('images/image-product-2.jpg')}
+
+.slide3{background-image: url('images/image-product-3.jpg')}
+
+.slide4{background-image: url('images/image-product-4.jpg')}
+
+.slide-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.slide-content span {
+    font-size: 5rem;
+    color: white;
+}
+
+.arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    margin-top: -35px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+#arrow-left {
+    background-color: #fff;
+    border: none;
+    padding: 25px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    margin-left: 30px;
+}
+
+#arrow-right {
+    background-color: #fff;
+    border: none;
+    padding: 25px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 0;
+    margin-right: 30px;
+}
+
+.mobile-main {
+    display: none;
+}
+
+
+
+.cart-section {
+    position: relative;
+}
+
+.cart {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+#cart-icon {
+    margin-right: 20px;
+}
+
+.cart-dropdown {
+    position: absolute;
+    top: 145%;
+    right: 0;
+    width: 300px;
+    height: 230px;
+    background-color: white;
+    border: none;
+    box-shadow:0px 8px 17px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: none;
+    z-index: 999;
+}
+
+.head4 {
+    border-bottom: 1px solid hsl(220, 100%, 97%);
+    width: 100%;
+}
+
+.cart-dropdown h4 {
+    padding: 0;
+    margin: 0;
+    padding: 20px;
+}
+
+.cart-item {
+    margin-bottom: 10px;
+}
+
+.img-avatar {
+    cursor: pointer;
+}
+
+.button {
+    width: 94%;
+    color: white;
+    background-color: hsl(26, 100%, 55%);
+    border-radius: 10px;
+    padding: 15px 40px;
+    border: none;
+    font-weight: 700;
+    transition: all .3s;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.itemShower {
+    height: 50px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.text-part {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.lower-sec {
+    padding: 20px;
+}
+
+/* Existing styles for your mobile header */
+
+#openNav {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  #sideNav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    overflow-x: hidden;
+    transition: 0.3s;
+    z-index: 1000;
+  }
+  
+  #sideNav ul {    
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+  }
+
+  #closeNav {
+    background-color: transparent;
+    border: none;
+    padding-left: 40px;
+    padding-top: 30px;
+    font-size: 30px;
+    color: hsl(219, 9%, 45%);
+  }
+  
+  #sideNav ul li {    
+    padding: 0;
+    margin: 0;
+  }
+  
+  #sideNav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    display: block;
+  }
+  
+
+@media screen and (max-width: 900px) {
+    .desktop-header {
+        display: none;
+    }
+
+    .mobile-header {
+        display: grid;
+        padding: 0 20px 0 20px;
+        height: 75px;
+    }
+
+    body {
+        margin: 0;
+    }
+
+    main {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    main .first-section {
+        display: none;
+    }
+
+    main .second-section {
+        width: 80%;
+    }
+
+    .mobile-main {
+        display: flex;
+        padding-bottom: 20px;
+    }
+    .quan {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .q-cont {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .quan button {
+        width: 100%;
+    }
+}
